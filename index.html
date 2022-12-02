@@ -1,27 +1,237 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link href="styles/style-ein.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <title>Моя тестовая страница</title>
-  </head>
-  <body>
-    <h2> Я тестирую штуку </h2>
+<!--просто путсть будет-->
+<html lang="ru">
+
+<head>
+  <!-- не отображается на странице -->
+  <meta charset="utf-8"> <!-- устанавливаем кодировку всех языков мира -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- шрифт -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet"> <!-- шрифт -->
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon"> <!-- иконка -->
+  <link href="styles/style-ein.css" rel="stylesheet" type="text/css"> <!-- стиль -->
+  <title>Моя тестовая страница</title>
+</head>
+
+<body>
+  <time datetime="19:30:01.856">19:30:01.856</time>
+  <h1> Я тестирую штуку </h1>
+  <!-- Дата и время -->
+  <p>Жила-была девчушка Нелл,<br> <!-- перенос строки -->
+    Любившая писать HTML:<br>
+    Её семантика ужасна была — <br>
+    Она и сама прочитать ничего не могла.</p>
+  <p class="special">Рон был зажат в углу адскими тварями. Он боялся, но твёрдо решил защитить своих друзей, поднял свою
+    волшебную
+    палочку и приготовился к битве, надеясь, что справится со своим несчастьем.</p>
+  <hr> <!-- горизонтальная линия -->
+  <div class="box"></div>
+  <p>Тем временем Гарри сидел дома с раскрытым указом и размышлял о том, когда выйдут новые серии спин-оффов; в это
+    время зачарованное письмо пархнуло в окно и приземлилось у него на коленях. Он прочитал его и подскочил на ноги; он
+    подумал: "Думаю, самое время вернуться к работе".</p>
+  <p> <a href=index.html#сюда> ссылка на жирный шрифт </a></p> <!-- вместо индекса можно любое другое -->
+  <figure>
     <img src="images/eins.png" alt="тестовое изображение номер один">
-    <p> это одиночный абзатц </p>
-    <ul> 
-      <li> не нум </li>
-      <li> ерованный </li>
-    </ul>
-    <ol>
-      <li> нум </li>
-      <li> ерованный </li>
-    </ol>
-    <a href="https://www.mozilla.org/ru/about/manifesto/details/">Манифест Mozilla</a>
-    <button>Change user</button>
-    <script src="scripts/main.js"></script>
-  </body>
+    <figcaption>заголовок</figcaption>
+  </figure>
+
+  <!-- вы можете объединить несколько экземпляров этих функций в сложные URL-адреса, если необходимо, например: ../../../сложный/путь/к/моему/файлу.html -->
+  <!-- <a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US"
+   download="firefox-39-installer.exe">
+        Скачать Firefox 39 для Windows
+        </a> пример использования элемента загрузки -->
+  <!-- <video controls>
+    <source src="rabbit320.mp4" type="video/mp4"> для разных браузеров - разные файлы!
+    <source src="rabbit320.webm" type="video/webm"> для разных браузеров - разные файлы!
+    <p>Ваш браузер не поддерживает HTML5 видео. Вот <a href="rabbit320.mp4">ссылка на видео</a> взамен.</p>
+  </video> -->
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/N9OF3Z7YSXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; sandbox></iframe> можно встроить видео так, но это небезопасно  -->
+  <p> это одиночный абзатц </p>
+  <span style="font-size: 32px; margin: 21px 0;">Это заголовок верхнего уровня?</span>
+  <ul>
+    <li> не нум </li>
+    <li class="special"> ерованный </li>
+  </ul>
+  <ol>
+    <li> <em> нум </em></li>
+    <li> ерованный </li>
+  </ol>
+  <strong id="сюда"> Жирный шрифт </strong>
+  <em class="special">курсив</em>
+  <div class="newbox">This box has a height and a width. This means that if there is too much content to be displayed
+    within the assigned height, there will be an overflow situation. If overflow is set to hidden then any overflow will
+    not be visible.</div>
+  <a href="https://www.mozilla.org/ru/about/manifesto/details/">Манифест Mozilla</a>
+  <p></p>
+  <p></p>
+  <p>Как указано в статье о <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote">
+      <cite>блочных цитатах</cite></a>:
+  </p>
+  <blockquote cite="https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote">
+    <p><strong>HTML-элемент<code>&lt;blockquote&gt;</code></strong> (от англ. <em>HTML Block Quotation Element</em>)
+      указывает на то, что заключённый в нём текст является развёрнутой цитатой.</p>
+    <p>Элемент цитирования — <code>&lt;q&gt;</code> — <q
+        cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">предназначен
+        для коротких цитат, не требующих прерывания абзаца</q>.</p>
+  </blockquote>
+
+  <div class="maindiv">
+    <div>
+      <h2>First article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Second article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Third article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+
+      <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit.
+        Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid
+        chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+    </div>
+
+    <div>
+      <h2>Fourth article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Fifth article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Sixth article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+
+      <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit.
+        Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid
+        chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+    </div>
+
+    <div>
+      <h2>Seventh article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Eighth article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Ninth article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+
+      <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit.
+        Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid
+        chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+    </div>
+
+    <div>
+      <h2>Tenth article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Eleventh article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+    </div>
+
+    <div>
+      <h2>Twelfth article</h2>
+
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+        single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health
+        goth gastropub hammock.</p>
+
+      <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit.
+        Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid
+        chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+    </div>
+  </div>
+  <div class="buttons">
+    <button>Smile</button>
+    <button>Laugh</button>
+    <button>Wink</button>
+    <button>Shrug</button>
+    <button>Blush</button>
+  </div>
+  <button>Change user</button>
+  <script src="scripts/main.js"></script>
+</body>
+
+<div class="wrapper">
+  <div class="row">
+    <div class="col">1</div>
+    <div class="col">2</div>
+    <div class="col">3</div>
+    <div class="col">4</div>
+    <div class="col">5</div>
+    <div class="col">6</div>
+    <div class="col">7</div>
+    <div class="col">8</div>
+    <div class="col">9</div>
+    <div class="col">10</div>
+    <div class="col">11</div>
+    <div class="col">12</div>
+  </div>
+  <div class="row">
+    <div class="col span1">13</div>
+    <div class="col span6">14</div>
+    <div class="col span3">15</div>
+    <div class="col span2">16</div>    
+  </div>
+</div>
+
 </html>

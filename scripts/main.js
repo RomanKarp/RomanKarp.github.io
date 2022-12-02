@@ -10,21 +10,23 @@ myImage.onclick = function() {
 }
 
 var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h2');
+var myHeading = document.querySelector('h1');
 
 function setUserName() {
   var myName = prompt('Please enter your name.'); //вызов окна с полем ввода
   localStorage.setItem('name', myName); // API которое позволяет хранить данные
-  myHeading.textContent = 'Mozilla is cool, ' + myName;
+  myHeading.textContent = 'Willkommen, ' + myName;
 }
 
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   var storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+  myHeading.textContent = 'Willkommen, ' + storedName;
 }
 
 myButton.onclick = function() {
   setUserName();
 }
+
+var randomNumber = Math.floor(Math.random() * 100) + 1;

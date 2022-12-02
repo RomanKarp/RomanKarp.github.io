@@ -1,27 +1,37 @@
 
 html {
-  font-family: placeholder: 'Amatic SC', cursive;
+  font-family: placeholder: "Amatic SC", cursive;
   color: green;
   background-color: #000;
 }
 
-h2 {
+h1 {
   font-size: 60px;
   text-align: center;
 }
 
-p, li {
+p, li { /*запятая - комбинатор. подробнее о комбинаторах и селекторах: https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Selectors?qs=сел*/
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+  background-image: url("../images/icon.ico");
+  background-size: cover;
+  /*background-repeat: repeat-y;*/
+  /*background-size: contain;*/
+  /*background-position: top 20px right 10px;*/
 }
 
 body {
-  width: 600px;
   margin: 0 auto;
   background-color: #FF9500;
   padding: 0 20px 20px 20px;
   border: 5px solid green;
+}
+
+@media (max-width: 700px) { /*комментарий*/
+  body {
+    background-color: blue;
+  }
 }
 
 img {
@@ -30,3 +40,109 @@ img {
   width: 400px;
 }
 
+.special {
+  color: aqua;
+}
+
+em.special {
+  color: blue;
+}
+
+em {
+  color: blanchedalmond;
+}
+
+li em {
+  color: rebeccapurple;
+}
+
+h1 + p {
+  font-size: 200%;
+  text-align: center;
+}
+
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: black;
+}
+
+.box {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(circle, yellow 3%, black 50%);
+  border-radius: 10px;
+  transform: rotate(0.8turn)
+}
+
+.newbox {
+  border: 1px solid #333333;
+  width: 100px;
+  height: 100px;
+  overflow-y: scroll;
+  overflow: auto;
+  opacity: 0.5;
+}
+
+.maindiv {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column*/
+  flex-direction: row; /* можно сдалать обратным: row-reverse*/
+  
+}
+
+.maindiv div {
+  flex: 200px;
+}
+
+div:nth-of-type(3) {
+  flex: 2; /*устанавливает занимаемое место в частях от всего 2/12 в данном случае, но тк часть переносится - всё немного ломается . лучше видно на примере с 3 колонками*/
+}
+
+div.buttons {
+  display: flex;
+  align-items: center; /*вертикаль*/
+  justify-content: space-around; /*горизонталь*/
+  /*https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox*/
+}
+
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding-right: 2.08333333%;
+}
+
+.row {
+  clear: both;
+}
+
+.col {
+  float: left;
+  margin-left: 2.08333333%;
+  width: 6.25%;
+  background: rgb(255, 150, 150);
+}
+
+.col.span2 { width: calc((6.25%*2) + 2.08333333%); }
+.col.span3 { width: calc((6.25%*3) + (2.08333333%*2)); }
+.col.span4 { width: calc((6.25%*4) + (2.08333333%*3)); }
+.col.span5 { width: calc((6.25%*5) + (2.08333333%*4)); }
+.col.span6 { width: calc((6.25%*6) + (2.08333333%*5)); }
+.col.span7 { width: calc((6.25%*7) + (2.08333333%*6)); }
+.col.span8 { width: calc((6.25%*8) + (2.08333333%*7)); }
+.col.span9 { width: calc((6.25%*9) + (2.08333333%*8)); }
+.col.span10 { width: calc((6.25%*10) + (2.08333333%*9)); }
+.col.span11 { width: calc((6.25%*11) + (2.08333333%*10)); }
+.col.span12 { width: calc((6.25%*12) + (2.08333333%*11)); }
